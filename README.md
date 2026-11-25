@@ -35,4 +35,4 @@ Add **At Home Lighting** (`custom:at-home-lighting-card`) to discover lights aut
 
 ## Widget size
 
-Open the People or Lighting card editor and select a tile size. The four HAD presets are 1×1, 2×1, 1×2, and 2×2. In a Sections dashboard, one unit spans two native columns and three native rows. Larger presets multiply those spans. After upgrading from v0.2.3, select the preset again and save to replace the old saved grid settings. Masonry controls its own column widths. In YAML, use values such as `size: 1x2`.
+Open the People or Lighting card editor and select a tile size. The four HAD presets are 1×1, 2×1, 1×2, and 2×2. In a Sections dashboard, one unit spans two default-mode columns (half a section) and three rows. Larger presets multiply those spans. After upgrading from v0.2.3 or v0.2.4, select the preset again and save to replace the old saved grid settings. Masonry controls its own column widths. In YAML, use values such as `size: 1x2`.
