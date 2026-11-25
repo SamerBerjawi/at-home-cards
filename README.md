@@ -2,14 +2,14 @@
 
 Custom Lovelace cards for Home Assistant, adapted from the [HAD dashboard](https://github.com/SamerBerjawi/had-homeassistantdashboard).
 
-The initial preview includes the People card. Future releases will bring more of HAD's overview cards, room tiles, and entity cards to Lovelace.
+The preview includes the People and Lighting cards. Future releases will bring more of HAD's overview cards, room tiles, and entity cards to Lovelace.
 
 ## Install the preview
 
 1. In Home Assistant 2026.11 or later, open **Settings → Marketplace → Add from link** and connect GitHub if prompted.
 2. Enter `SamerBerjawi/at-home-cards` and choose **Dashboard** if asked for a type.
 3. Open **At Home Cards**, select **Install**, then reload Home Assistant in your browser.
-4. Edit a dashboard and select **Add card → At Home People**.
+4. Edit a dashboard and select **Add card**, then choose **At Home People** or **At Home Lighting**.
 
 If you manage dashboard resources in YAML, add the JavaScript module URL shown by Marketplace during installation.
 
@@ -28,3 +28,7 @@ entities:
 ```
 
 The cards run in Home Assistant using its current session. This repository distributes the built JavaScript module.
+
+## Lighting card
+
+Add **At Home Lighting** (`custom:at-home-lighting-card`) to discover lights automatically, or select specific lights in the editor. Use the expand arrow to open the room list, search lights, switch them individually or together, and adjust supported brightness controls.
