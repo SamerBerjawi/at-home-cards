@@ -41,4 +41,20 @@ Open the card editor and select a tile size. The four HAD presets are 1×1, 2×1
 
 In the dashboard card picker, search for **At Home**. The collection includes People, Lighting, Switches, Fans, Scenes, Areas, Doors & windows, Weather, Thermostat, Media, Vacuums, and Cameras. Each card has an entity or area selector, an optional title, four size presets, and an expandable details sheet.
 
-The cards render HAD’s overview widgets and Pro sheets. Weather includes the Sky, Minimal, and Trend designs. Selecting a room opens its area details inside Lovelace. Cameras use Home Assistant’s native stream player. Available actions, camera playback, history, and forecasts depend on the selected integration and its capabilities.
+The cards render HAD’s overview widgets and Pro sheets. Weather includes the Sky, Minimal, and Trend designs. Selecting a room opens its area details inside Lovelace. Cameras use the installed WebRTC Camera player when available, with the Home Assistant player as the default on installations without WebRTC Camera. Available actions, camera playback, history, and forecasts depend on the selected integration and its capabilities.
+
+## Camera streams
+
+By default, At Home Cameras passes the selected camera entity to the player. If your working WebRTC Camera card uses a go2rtc stream name, RTSP URL, or a list of streams, copy its playback options under the corresponding camera entity in the At Home card’s YAML editor.
+
+```yaml
+type: custom:at-home-cameras-card
+entities:
+  - camera.front_door
+webrtc:
+  camera.front_door:
+    url: front_door_hd
+    mode: webrtc
+```
+
+Open the Cameras Pro sheet to play the selected stream. Compact tile designs can show a still preview.
