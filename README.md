@@ -2,7 +2,7 @@
 
 Custom Lovelace cards for Home Assistant, adapted from the [HAD dashboard](https://github.com/SamerBerjawi/had-homeassistantdashboard).
 
-The preview includes the People and Lighting cards. Future releases will bring more of HAD's overview cards, room tiles, and entity cards to Lovelace.
+The preview includes twelve overview cards. Future releases will bring more of HAD's overview cards, room tiles, and entity cards to Lovelace.
 
 ## Install the preview
 
@@ -36,3 +36,9 @@ Add **At Home Lighting** (`custom:at-home-lighting-card`) to discover lights aut
 ## Widget size
 
 Open the People or Lighting card editor and select a tile size. The four HAD presets are 1×1, 2×1, 1×2, and 2×2. In a Sections dashboard, one unit spans two default-mode columns (half a section) and three rows. Larger presets multiply those spans. Selecting a preset clears any saved width and height overrides so Home Assistant uses the recommended size. After upgrading, reselect your preset and save once. Masonry controls its own column widths. In YAML, use values such as `size: 1x2`.
+
+## Overview cards
+
+In the dashboard card picker, search for **At Home**. The collection includes People, Lighting, Switches, Fans, Scenes, Areas, Doors & windows, Weather, Thermostat, Media, Vacuums, and Cameras. Each card has an entity or area selector, an optional title, four size presets, and an expandable details sheet.
+
+The ten additional overview cards use Home Assistant controls in their sheets. Select a device, station, or room to see its details. Available actions, camera playback, history, and forecasts depend on the selected integration and its capabilities.
