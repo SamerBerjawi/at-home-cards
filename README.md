@@ -15,7 +15,7 @@ If you manage dashboard resources in YAML, add the JavaScript module URL shown b
 
 ## People card
 
-The People card shows who is home, who is away, and named zones such as work or school. It displays entity photos or initials. Select a portrait to open Home Assistant's entity details.
+The People card shows who is home, who is away, and named zones such as work or school. It displays entity photos or initials. Select a portrait to open the person’s HAD details sheet.
 
 Leave the entity selector empty to use visible `person` entities automatically, with device trackers as a fallback if there are no visible people. Select entities to show a specific household or group. You can also add a title and resize the card in the **Layout** tab of a Sections dashboard.
 
@@ -35,10 +35,10 @@ Add **At Home Lighting** (`custom:at-home-lighting-card`) to discover lights aut
 
 ## Widget size
 
-Open the People or Lighting card editor and select a tile size. The four HAD presets are 1×1, 2×1, 1×2, and 2×2. In a Sections dashboard, one unit spans two default-mode columns (half a section) and three rows. Larger presets multiply those spans. Selecting a preset clears any saved width and height overrides so Home Assistant uses the recommended size. After upgrading, reselect your preset and save once. Masonry controls its own column widths. In YAML, use values such as `size: 1x2`.
+Open the card editor and select a tile size. The four HAD presets are 1×1, 2×1, 1×2, and 2×2. In a Sections dashboard, one unit spans six Home Assistant grid columns (half a section) and three rows. Larger presets multiply those spans. Selecting a preset clears any saved width and height overrides so Home Assistant uses the recommended size. After upgrading, reselect your preset and save once. Masonry controls its own column widths. In YAML, use values such as `size: 1x2`.
 
 ## Overview cards
 
 In the dashboard card picker, search for **At Home**. The collection includes People, Lighting, Switches, Fans, Scenes, Areas, Doors & windows, Weather, Thermostat, Media, Vacuums, and Cameras. Each card has an entity or area selector, an optional title, four size presets, and an expandable details sheet.
 
-The ten additional overview cards use Home Assistant controls in their sheets. Select a device, station, or room to see its details. Available actions, camera playback, history, and forecasts depend on the selected integration and its capabilities.
+The cards render HAD’s overview widgets and Pro sheets. Weather includes the Sky, Minimal, and Trend designs. Selecting a room opens its area details inside Lovelace. Cameras use Home Assistant’s native stream player. Available actions, camera playback, history, and forecasts depend on the selected integration and its capabilities.
