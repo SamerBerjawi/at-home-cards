@@ -32,3 +32,7 @@ The cards run in Home Assistant using its current session. This repository distr
 ## Lighting card
 
 Add **At Home Lighting** (`custom:at-home-lighting-card`) to discover lights automatically, or select specific lights in the editor. Use the expand arrow to open the room list, search lights, switch them individually or together, and adjust supported brightness controls.
+
+## Widget size
+
+Open the People or Lighting card editor and select a tile size. The four HAD presets are 1×1, 2×1, 1×2, and 2×2. In a Sections dashboard, one unit spans half the section width. The card is 148 px tall for one row and 308 px tall for two rows. Masonry controls its own column widths. In YAML, use values such as `size: 1x2`.
