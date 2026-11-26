@@ -75,15 +75,23 @@ Room tiles adapt to their rendered dimensions. Use the Room-only `2x0.5` preset 
 
 ## Entity cards
 
-Add **At Home Light Entity**, **At Home Fan Entity**, **At Home Switch Entity**, or **At Home Scene Entity** and choose one entity in the visual editor. Each supports an optional display name and five tile sizes. The larger layouts expose additional controls when supported by the device.
+Choose an **At Home** entity card and choose one entity in the visual editor. Each supports an optional display name and five tile sizes. The larger layouts expose additional controls when supported by the device.
 
 | Batch | HAD entity tiles | Status |
 | --- | --- | --- |
 | 1 | Light, Fan | Updated in v0.2.14 |
 | 2 | Switch (including plugs and helpers), Scene (including scripts and buttons) | Available in v0.2.14 |
-| 3 | Climate, Cover, Sensor reading | Planned |
+| 3 | Climate, Cover, Sensor reading | Available in v0.2.15 |
 | 4 | Media player, Vacuum | Planned |
 | 5 | Camera, Opening | Planned |
 | Deferred | Lock, Motion, Safety, Car | Revisit with Security and Mobility |
 
 The entity editor can require confirmation before a power toggle or scene run. Switch Entity accepts switches and input booleans. Its display role can be automatic, switch, plug, helper, or light. Scene Entity accepts scenes, scripts, and buttons and dispatches the matching Home Assistant service.
+
+### Climate, Cover and Sensor Reading
+
+Choose **At Home Climate Entity** for a thermostat with HAD’s target-temperature ruler and HVAC mode selector. Target increments follow the entity’s reported step and the Home Assistant temperature unit.
+
+Choose **At Home Cover Entity** for blinds, shades or other covers. Position-reporting covers use HAD’s position ladder. Open/close-only covers show the two endpoints. The larger compositions also expose Stop while a supported cover is moving.
+
+Choose **At Home Sensor Reading Entity** for a numeric sensor. It uses the sensor’s reported unit and HAD’s status and comfort bands where defined. All three cards accept a single entity and support the five entity tile sizes.
