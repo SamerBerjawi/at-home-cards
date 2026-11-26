@@ -70,3 +70,5 @@ size: 2x1
 ```
 
 Each Room card has its own appearance and quick-action settings in the visual editor. Enable **Area pictures** to use the picture assigned to the area in Home Assistant. Choose temperature or humidity as the primary reading, control the visibility of readings, status, activity, and counts, and choose which quick actions the tile can offer. The compact tile supports a lights action. Standard and expanded tiles can show up to two and three available actions respectively. The editor saves these settings under `room_options`.
+
+Room tiles adapt to their rendered dimensions. Use the Room-only `2x0.5` preset for a compact horizontal tile (12 columns by 2 Sections rows). A full-height narrow tile stacks the controls above the room name and reading. Taller tiles can also show wrapped activity details.
