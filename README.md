@@ -68,3 +68,5 @@ type: custom:at-home-room-card
 area: living_room
 size: 2x1
 ```
+
+Each Room card has its own appearance and quick-action settings in the visual editor. Enable **Area pictures** to use the picture assigned to the area in Home Assistant. Choose temperature or humidity as the primary reading, control the visibility of readings, status, activity, and counts, and choose which quick actions the tile can offer. The compact tile supports a lights action. Standard and expanded tiles can show up to two and three available actions respectively. The editor saves these settings under `room_options`.
