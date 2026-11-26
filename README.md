@@ -72,3 +72,16 @@ size: 2x1
 Each Room card has its own appearance and quick-action settings in the visual editor. Enable **Area pictures** to use the picture assigned to the area in Home Assistant. Choose temperature or humidity as the primary reading, control the visibility of readings, status, activity, and counts, and choose which quick actions the tile can offer. The compact tile supports a lights action. Standard and expanded tiles can show up to two and three available actions respectively. The editor saves these settings under `room_options`.
 
 Room tiles adapt to their rendered dimensions. Use the Room-only `2x0.5` preset for a compact horizontal tile (12 columns by 2 Sections rows). A full-height narrow tile stacks the controls above the room name and reading. Taller tiles can also show wrapped activity details.
+
+## Entity cards
+
+Add **At Home Light Entity** or **At Home Fan Entity** and choose one entity in the visual editor. Each supports an optional display name and five tile sizes. The larger layouts expose additional controls when supported by the device.
+
+| Batch | HAD entity tiles | Status |
+| --- | --- | --- |
+| 1 | Light, Fan | Available in v0.2.13 |
+| 2 | Switch (including plugs and helpers), Scene (including scripts and buttons) | Planned |
+| 3 | Climate, Cover, Sensor reading | Planned |
+| 4 | Media player, Vacuum | Planned |
+| 5 | Camera, Opening | Planned |
+| Deferred | Lock, Motion, Safety, Car | Revisit with Security and Mobility |
