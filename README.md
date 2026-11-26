@@ -82,7 +82,7 @@ Choose an **At Home** entity card and choose one entity in the visual editor. Ea
 | 1 | Light, Fan | Updated in v0.2.14 |
 | 2 | Switch (including plugs and helpers), Scene (including scripts and buttons) | Available in v0.2.14 |
 | 3 | Climate, Cover, Sensor reading | Available in v0.2.15 |
-| 4 | Media player, Vacuum | Planned |
+| 4 | Media player, Vacuum | Available in v0.2.17 |
 | 5 | Camera, Opening | Planned |
 | Deferred | Lock, Motion, Safety, Car | Revisit with Security and Mobility |
 
@@ -95,3 +95,9 @@ Choose **At Home Climate Entity** for a thermostat with HAD’s target-temperatu
 Choose **At Home Cover Entity** for blinds, shades or other covers. Position-reporting covers use HAD’s position ladder. Open/close-only covers show the two endpoints. The larger compositions also expose Stop while a supported cover is moving.
 
 Choose **At Home Sensor Reading Entity** for a numeric sensor. It uses the sensor’s reported unit and HAD’s status and comfort bands where defined. All three cards accept a single entity and support the five entity tile sizes.
+
+### Media Player and Vacuum
+
+Choose **At Home Media Player Entity** and select one media player. The tile shows artwork and track information. Larger layouts add transport controls and playback progress, with shuffle and repeat in the large layout.
+
+Choose **At Home Vacuum Entity** and select one vacuum. The HAD Dock tile shows the robot’s state and battery when reported. Its primary action changes between Start, Pause, Resume, and Retry. Dock appears in the wide, tall, and large layouts. Both cards respect the capabilities reported by the selected device.
