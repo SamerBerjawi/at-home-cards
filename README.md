@@ -75,13 +75,15 @@ Room tiles adapt to their rendered dimensions. Use the Room-only `2x0.5` preset 
 
 ## Entity cards
 
-Add **At Home Light Entity** or **At Home Fan Entity** and choose one entity in the visual editor. Each supports an optional display name and five tile sizes. The larger layouts expose additional controls when supported by the device.
+Add **At Home Light Entity**, **At Home Fan Entity**, **At Home Switch Entity**, or **At Home Scene Entity** and choose one entity in the visual editor. Each supports an optional display name and five tile sizes. The larger layouts expose additional controls when supported by the device.
 
 | Batch | HAD entity tiles | Status |
 | --- | --- | --- |
-| 1 | Light, Fan | Available in v0.2.13 |
-| 2 | Switch (including plugs and helpers), Scene (including scripts and buttons) | Planned |
+| 1 | Light, Fan | Updated in v0.2.14 |
+| 2 | Switch (including plugs and helpers), Scene (including scripts and buttons) | Available in v0.2.14 |
 | 3 | Climate, Cover, Sensor reading | Planned |
 | 4 | Media player, Vacuum | Planned |
 | 5 | Camera, Opening | Planned |
 | Deferred | Lock, Motion, Safety, Car | Revisit with Security and Mobility |
+
+The entity editor can require confirmation before a power toggle or scene run. Switch Entity accepts switches and input booleans. Its display role can be automatic, switch, plug, helper, or light. Scene Entity accepts scenes, scripts, and buttons and dispatches the matching Home Assistant service.
