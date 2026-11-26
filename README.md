@@ -58,3 +58,13 @@ webrtc:
 ```
 
 Open the Cameras Pro sheet to play the selected stream. Compact tile designs can show a still preview.
+
+## Room card
+
+Choose **At Home Room** to show one Home Assistant area using HAD’s Rooms page tile. Select the room and tile size in the visual editor. A tap on the tile opens the selected area’s details. Quick actions depend on the devices assigned to that area. Use **At Home Areas** for the multi-room overview.
+
+```yaml
+type: custom:at-home-room-card
+area: living_room
+size: 2x1
+```
