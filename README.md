@@ -83,7 +83,7 @@ Choose an **At Home** entity card and choose one entity in the visual editor. Ea
 | 2 | Switch (including plugs and helpers), Scene (including scripts and buttons) | Available in v0.2.14 |
 | 3 | Climate, Cover, Sensor reading | Available in v0.2.15 |
 | 4 | Media player, Vacuum | Available in v0.2.17 |
-| 5 | Camera, Opening | Planned |
+| 5 | Camera, Opening | Available in v0.2.18 |
 | Deferred | Lock, Motion, Safety, Car | Revisit with Security and Mobility |
 
 The entity editor can require confirmation before a power toggle or scene run. Switch Entity accepts switches and input booleans. Its display role can be automatic, switch, plug, helper, or light. Scene Entity accepts scenes, scripts, and buttons and dispatches the matching Home Assistant service.
@@ -101,3 +101,9 @@ Choose **At Home Sensor Reading Entity** for a numeric sensor. It uses the senso
 Choose **At Home Media Player Entity** and select one media player. The tile shows artwork and track information. Larger layouts add transport controls and playback progress, with shuffle and repeat in the large layout.
 
 Choose **At Home Vacuum Entity** and select one vacuum. The HAD Dock tile shows the robot’s state and battery when reported. Its primary action changes between Start, Pause, Resume, and Retry. Dock appears in the wide, tall, and large layouts. Both cards respect the capabilities reported by the selected device.
+
+### Camera and Opening
+
+Choose **At Home Camera Entity** for one camera. The HAD Window tile starts with the camera snapshot. Tap the tile to go live, then tap again to return to the snapshot. The tile uses an installed WebRTC Camera player or Home Assistant’s native camera player. To use a named go2rtc stream, put the same per-camera `webrtc` options shown above on the entity card.
+
+Choose **At Home Opening Entity** for a door, window, garage-door, or opening sensor. The tile shows its current state, battery when reported, and a 24-hour timeline when Home Assistant Recorder returns data. Both cards have a visual editor and five tile sizes.
