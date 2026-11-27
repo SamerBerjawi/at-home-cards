@@ -39,9 +39,9 @@ Open the card editor and select a tile size. The four HAD presets are 1×1, 2×1
 
 ## Overview cards
 
-In the dashboard card picker, search for **At Home**. The collection includes People, Lighting, Switches, Fans, Scenes, Areas, Doors & windows, Weather, Thermostat, Media, Vacuums, and Cameras. Each card has an entity or area selector, an optional title, four size presets, and an expandable details sheet.
+In the dashboard card picker, search for **At Home**. The collection includes People, Lighting, Switches, Fans, Scenes, Areas, Doors & windows, Weather, Thermostat, Media, Vacuums, and Cameras. Each card has an entity or area selector, an optional title, the size presets supported by its HAD widget, and an expandable details sheet. The Cameras widget uses Small, Wide, and Large. A saved 1×2 Cameras preset uses Wide.
 
-The cards render HAD’s overview widgets and Pro sheets. Weather includes the Sky, Minimal, and Trend designs. Selecting a room opens its area details inside Lovelace. Cameras use the installed WebRTC Camera player when available, with the Home Assistant player as the default on installations without WebRTC Camera. Available actions, camera playback, history, and forecasts depend on the selected integration and its capabilities.
+The cards render HAD’s overview widgets and Pro sheets. Weather includes the Sky, Minimal, and Trend designs. Selecting a room opens the HAD Room page in a full-screen Lovelace dialog. Cameras use the installed WebRTC Camera player when available, with the Home Assistant player as the default on installations without WebRTC Camera. Available actions, camera playback, history, and forecasts depend on the selected integration and its capabilities.
 
 ## Camera streams
 
@@ -61,7 +61,7 @@ Open the Cameras Pro sheet to play the selected stream. Compact tile designs can
 
 ## Room card
 
-Choose **At Home Room** to show one Home Assistant area using HAD’s Rooms page tile. Select the room and tile size in the visual editor. A tap on the tile opens the selected area’s details. Quick actions depend on the devices assigned to that area. Use **At Home Areas** for the multi-room overview.
+Choose **At Home Room** to show one Home Assistant area using HAD’s Rooms page tile. Select the room and tile size in the visual editor. A tap on the tile opens the selected area’s HAD Room page. Room edits made in ATC are saved for the current Home Assistant user in the browser. Quick actions depend on the devices assigned to that area. Use **At Home Areas** for the multi-room overview.
 
 ```yaml
 type: custom:at-home-room-card
